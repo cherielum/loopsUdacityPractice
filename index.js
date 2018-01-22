@@ -59,3 +59,55 @@ while (num <= 99) {
     }
     num --;
 }
+
+//exercise 4-3
+// Write a while loop that counts down from 60 seconds and:
+
+// If there's a task being completed, it prints out the task
+// If there is no task being completed, it prints out the time as T-x seconds
+
+// During the final minute, NASA has 6 tasks to complete:
+
+// Orbiter transfers from ground to internal power (T-50 seconds)
+// Ground launch sequencer is go for auto sequence start (T-31 seconds)
+// Activate launch pad sound suppression system (T-16 seconds)
+// Activate main engine hydrogen burnoff system (T-10 seconds)
+// Main engine start (T-6 seconds)
+// Solid rocket booster ignition and liftoff! (T-0 seconds)
+
+var time = 60; 
+while (time >= 0) {
+    if (time === 0 ){
+        console.log("Solid rocket booster ignition and liftoff!");
+        break;
+    }
+     else if (time === 6) {
+        console.log("Main engine start"); 
+        time--;
+    }
+       else if (time === 10) {
+        console.log("Activate main engine hydrogen burnoff system"); 
+        time--;
+    }
+       else if (time === 16) {
+        console.log("Activate launch pad sound suppression system"); 
+        time--;
+    }
+ 
+    else if (time === 31) {
+        console.log("Ground launch sequencer is go for auto sequence start"); 
+        time--;
+    }
+    else if (time === 50) {
+        console.log("Orbiter transfers from ground to internal power"); 
+        time--;
+    }
+    else if ( time <= 60 && time >= 0) {
+        console.log("T-"+time+" seconds");
+        time --; 
+    }
+    else {
+        console.log("T-"+time+" seconds");
+    }
+}
+
