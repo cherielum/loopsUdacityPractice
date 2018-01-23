@@ -132,3 +132,22 @@ for (var x = 9; x >= 1; x--) {
 for (var x = 5; x < 10; x++) {
     console.log(x);
 }
+
+// Programming Quiz: Fix the Error 2 (4-6)
+
+
+// fix the for loop
+for (var k = 0; k < 200; k++) {
+   console.log(k);
+}
+
+// 4-7
+//Write a for loop that prints out the factorial of the number 12
+//Save your final answer in a variable called solution and print it to the console.
+
+
+var solution = 12;
+for (var i = 11; i > 0; i--){
+solution *= i ; 
+}
+console.log(solution);
