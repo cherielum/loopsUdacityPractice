@@ -111,3 +111,24 @@ while (time >= 0) {
     }
 }
 
+//Programming Quiz: Changing the Loop (4-4)
+// rewrite the while loop as a for loop
+var x = 9;
+while (x >= 1) {
+    console.log("hello " + x);
+    x = x - 1;
+}
+
+for (var x = 9; x >= 1; x--) {
+    console.log("hello " + x);
+}
+
+
+/*
+ * Programming Quiz: Fix the Error 1 (4-5)
+ */
+
+// fix the for loop
+for (var x = 5; x < 10; x++) {
+    console.log(x);
+}
