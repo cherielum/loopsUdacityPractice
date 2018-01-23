@@ -151,3 +151,11 @@ for (var i = 11; i > 0; i--){
 solution *= i ; 
 }
 console.log(solution);
+
+//Programming Quiz: Find my Seat (4-8)
+for (var row = 0; row < 26; row++) {
+    row;
+    for (var seat = 0; seat<=99; seat++){
+    console.log(row+"-"+seat);
+  }
+}
